@@ -6,6 +6,7 @@ type Coordinates<X,Y> = [X, Y]
 const coordinates1: Coordinates<number, number> = [2, 3]
 const coordinates2: Coordinates<string, string> = ["s", "d"]
 // object generic 
-const userList: GenericArray<{name: string, age: number}> = [
+type User5 = {name: string, age: number}
+const userList: GenericArray<User5> = [
     {name: "xx", age: 35}, {name: "yy", age: 40}
 ]
